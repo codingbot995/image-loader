@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img loader</title>
+    <link rel="stylesheet" href="imgloader.css">
+</head>
+<body>
+    <div class="img-container">
+        <img src="https://picsum.photos/300?random=1">
+        <img src="https://picsum.photos/300?random=2">
+        <img src="https://picsum.photos/300?random=1">
+        <img src="https://picsum.photos/300?random=2">
+    </div>
+    <button class="btn">load more</button>
+    <script>
+        const imgsEl = document.querySelector('.img-container');
+        const btnEl = document.querySelector('.btn');
+
+        btnEl.addEventListener('click', ()=>{
+            imageNum = 10;
+            addNewImages();
+        });
+        function addNewImages(){
+            for (let index = 0; index < imageNum; index++) {
+            const newImgEl = document.createElement('img');
+            newImgEl.src = `https://picsum.photos/300?random=${
+                Math.floor(Math.random()*2000)}`;
+            imgsEl.appendChild(newImgEl);
+        }
+        }
+    </script>
+</body>
+</html>
