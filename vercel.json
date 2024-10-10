@@ -1,8 +1,0 @@
-
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
-  "cleanUrls": true, // Optional: enables clean URLs (removes .html extension)
-  "trailingSlash": false // Optional: controls trailing slashes for URLs
-}
