@@ -3,7 +3,6 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "cleanUrls": true, // Optional: enables clean URLs (removes .html extension)
+  "trailingSlash": false // Optional: controls trailing slashes for URLs
 }
