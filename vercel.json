@@ -2,11 +2,7 @@
     "routes": [
        {
          "src": "/",
-         "dest": "/index.html"
-       },
-       {
-         "src": "/test",
-         "dest": "/index.html"
+         "dest": "/IMGloader.html"
        }
     ]
 }
